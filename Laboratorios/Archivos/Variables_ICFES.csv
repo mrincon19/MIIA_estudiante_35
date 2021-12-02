@@ -1,0 +1,81 @@
+Variable,Nombre_Variable,Usarse,Descripcion,Comentarios,Observaciones,Tipo
+ESTU_TIPODOCUMENTO,,No,Tipo de Documento ,Si los numeros de documento se repiten abra que usarlo,,
+ESTU_NACIONALIDAD,,No,Nacionalidad,Se asume la gran porcion son Colombianos,,
+ESTU_GENERO,Genero,Si,Genero,,,Categorica
+ESTU_FECHANACIMIENTO,Fecha Nacimiento,Si,Fecha de Nacimiento,"Validar si la edad se concentra, no es tan variable y si tiene indicidencia en el puntaje",Calcular edad del estudiante,Numerica
+PERIODO,Periodo ICFES,No,Periodo de presentacion del examen,Asociado con el calendario del establecimiento,,Categorica
+ESTU_CONSECUTIVO,ID Estudiante,Key,Id publico del inscrito (SB11),Este es el consecutivo unico para cada estudiante,,Categorica
+ESTU_ESTUDIANTE,,No,Indica si el inscrito realizo la inscripcion por medio de un colegio (estudiante) ofue de manera particular (individual),,,
+ESTU_PAIS_RESIDE,,No,Pais donde reside actualmente ,Reside actualmente,,
+ESTU_TIENEETNIA,Pertenece alguna etnia?,Si,¿Pertenece usted a un grupo etnico minoritario?,,,Categorica
+ESTU_ETNIA,,No,¿Cual es el grupo etnico minoritario al que pertenece?,,,
+ESTU_DEPTO_RESIDE,Departamento residencia,Si,Departamento de residencia,"Puede ser redunte, mejor maneja el COD ",,Categorica
+ESTU_COD_RESIDE_DEPTO,,No,Codigo Dane del departamento de residencia,,,
+ESTU_MCPIO_RESIDE,,No,Municipio de Residencia,"En principio NO, validar si hace algun cambio significativo en el puntaje que no lo este agrupando el DEPTO",,
+ESTU_COD_RESIDE_MCPIO,,No,Codigo Dane del municipio de residencia,"En principio NO, validar si hace algun cambio significativo en el puntaje que no lo este agrupando el DEPTO",,
+FAMI_ESTRATOVIVIENDA,Estrato residencia,Si,Estrato socioeconomico de la vivienda segun recibo de energia electrica,,,Categorica
+FAMI_PERSONASHOGAR,,No,"¿Cuantas personas conforman el hogar donde vive actualmente, incluido usted?",Validar en los descriptivos si meterlo o no,,
+FAMI_CUARTOSHOGAR,,No,"En total, ¿en cuantos cuartos duermen las personas de su hogar?",Validar en los descriptivos si meterlo o no,,
+FAMI_EDUCACIONPADRE,,No,Nivel educativo mas alto alcanzado por el padre,Validar en los descriptivos si meterlo o no,,
+FAMI_EDUCACIONMADRE,,No,Nivel educativo mas alto alcanzado por la madre,Validar en los descriptivos si meterlo o no,,
+FAMI_TRABAJOLABORPADRE,,No,Senale aquella labor que sea mas similar al trabajo que realizo su padre durante la mayor parte del ultimo ano,Validar en los descriptivos si meterlo o no,,
+FAMI_TRABAJOLABORMADRE,,No,Senale aquella labor que sea mas similar al trabajo que realizo su madre durante la mayor parte del ultimo ano,Validar en los descriptivos si meterlo o no,,
+FAMI_TIENEINTERNET,Tiene internet?,Si,¿Su hogar cuenta con servicio o conexion a internet?,,,Categorica
+FAMI_TIENESERVICIOTV,Tiene servicio TV?,Si,¿Su hogar cuenta con servicio cerrado de television?,,,Categorica
+FAMI_TIENECOMPUTADOR,Tiene computador?,Si,¿Cuales de los siguientes bienes posee su hogar?: Computador,,,Categorica
+FAMI_TIENELAVADORA,,No,¿Cuales de los siguientes bienes posee su hogar?: Maquina lavadora de ropa,Posiblemente contenida dentro del estrato socieconomico,,
+FAMI_TIENEHORNOMICROOGAS,,No,¿Cuales de los siguientes bienes posee su hogar?: Horno Microondas u Horno electrico o a gas ,Posiblemente contenida dentro del estrato socieconomico,,
+FAMI_TIENEAUTOMOVIL,Tiene automovil?,Si,¿Cuales de los siguientes bienes posee su hogar?: Automovil particular,,,Categorica
+FAMI_NUMLIBROS,,No,"Cuantos libros fisicos o electronicos hay en su hogar excluyendo periodicos, revistas, directorios telefonicos y libros del colegio?",Es posible que no resulte nada en el puntaje,,
+FAMI_COMELECHEDERIVADOS,"¿Cuantas veces por semana se toman leche o comen sus derivados (queso, yogurt, etc.) en su hogar?",Si,"¿Cuantas veces por semana se comen los siguientes alimentos en su hogar? Leche o derivados (queso, yogurt, etc.)",,,Categorica
+FAMI_COMECARNEPESCADOHUEVO,"¿Cuantas veces por semana se comen pescado, carne o huevos en su hogar?",Si,"¿Cuantas veces por semana se comen los siguientes alimentos en su hogar? Cereales (avena, granola), frutos secos (almendras, mani) o legumbres (frijoles, garbanzos, lentejas)",,,Categorica
+FAMI_COMECEREALFRUTOSLEGUMBRE,"¿Cuantas veces por semana se comen cereales, frutos secos o legumbres en su hogar?",Si,"¿Cuantas veces por semana se comen los siguientes alimentos en su hogar? Cereales (avena, granola), frutos secos (almendras, mani) o legumbres (frijoles, garbanzos, lentejas)",,,Categorica
+FAMI_SITUACIONECONOMICA,,No,"Con respecto al ano inmediatamente anterior, la situacion economica de su hogar es:",Me parece dificil que un joven pueda objetivamente responder a esa pregunta,,
+ESTU_DEDICACIONLECTURADIARIA,,No,"Usualmente, ¿cuanto tiempo al dia dedica a leer por entretenimiento?",Validar en los descriptivos si meterlo o no,,
+ESTU_DEDICACIONINTERNET,,No,"Usualmente, ¿cuanto tiempo al dia dedica a navegar en internet? Excluya actividades academicas",Validar en los descriptivos si meterlo o no,,
+ESTU_HORASSEMANATRABAJA,¿Cuantas horas trabajo usted durante la semana pasada?,Si,¿Cuantas horas trabajo usted durante la semana pasada?,Podria agruparse que Si y No,,Categorica
+ESTU_TIPOREMUNERACION,¿Usted recibe algun tipo de remuneracion por trabajar?,No,¿Usted recibe algun tipo de remuneracion por trabajar?,Podria agruparse que Si y No,,Categorica
+COLE_CODIGO_ICFES,,No,Codigo Icfes de la sede-jornada,"El colegio, su nombre, no hace falta para el analisis",,
+COLE_COD_DANE_ESTABLECIMIENTO,,No,Codigo Dane del Establecimiento Educativo,"El colegio, su nombre, no hace falta para el analisis",,
+COLE_NOMBRE_ESTABLECIMIENTO,,No,Nombre del Establecimiento,"El colegio, su nombre, no hace falta para el analisis",,
+COLE_GENERO,"Establecimiento es mixto, femenino o masculino",Si,,,,Categorica
+COLE_NATURALEZA,,No,Indica la naturaleza del Establecimiento,,,
+COLE_CALENDARIO,Calendario academico del establecimiento,Si,Calendario academico del Establecimiento,,,Categorica
+COLE_BILINGUE,Establecimiento es bilingue?,Si,Indica si el Establecimiento es bilingüe o no,,,Categorica
+COLE_CARACTER,Establecimiento es Academico o Tecnico,Si,Indica el caracter del Establecimiento,,,Categorica
+COLE_COD_DANE_SEDE,,No,Codigo Dane de la Sede,,,
+COLE_NOMBRE_SEDE,,No,Nombre de la Sede,,,
+COLE_SEDE_PRINCIPAL,,No,¿Esta es la sede principal del Establecimiento Educativo?,,,
+COLE_AREA_UBICACION,,No,area de ubicacion de la Sede,,,
+COLE_JORNADA,,No,Jornada de la Sede,,,
+COLE_COD_MCPIO_UBICACION,,No,Codigo Danedel municipio donde esta ubicada la SedeN,,,
+COLE_MCPIO_UBICACION,,No,Nombre del municipio donde esta ubicada la Sede,,,
+COLE_COD_DEPTO_UBICACION,,No,Nombre del departamento donde esta ubicada la Sede,,,
+COLE_DEPTO_UBICACION,,No,Nombre del departamento donde esta ubicada la Sede,,,
+ESTU_PRIVADO_LIBERTAD,,No,¿Se encuentra privado de la libertad?,,,
+ESTU_COD_MCPIO_PRESENTACION,,No,Codigo Dane del municipio presentacion del examen,,,
+ESTU_MCPIO_PRESENTACION,,No,Municipio de presentacion del examen,,,
+ESTU_DEPTO_PRESENTACION,,No,Departamento de presentacion del examen,,,
+ESTU_COD_DEPTO_PRESENTACION,,No,Codigo Dane del departamento de presentacion del examen,,,
+PUNT_LECTURA_CRITICA,Puntaje Lectura Critica,Si,Puntaje en lectura critica,"Numerica -Rango [0, 100]",,Numerica
+PERCENTIL_LECTURA_CRITICA,,No,,,,
+DESEMP_LECTURA_CRITICA,,No,,,,
+PUNT_MATEMATICAS,Puntaje Matematicas,Si,Puntaje en matematicas,"Numerica -Rango (0, 100)",,Numerica
+PERCENTIL_MATEMATICAS,,No,,,,
+DESEMP_MATEMATICAS,,No,,,,
+PUNT_C_NATURALES,Puntaje Ciencias Naturales,Si,Puntaje en ciencias naturales ,"Numerica -Rango (0, 100)",,Numerica
+PERCENTIL_C_NATURALES,,No,,,,
+DESEMP_C_NATURALES,,No,,,,
+PUNT_SOCIALES_CIUDADANAS,Puntaje Sociales Ciudadanas,Si,Puntaje sociales y ciudadanas,"Numerica -Rango (0, 100)",,Numerica
+PERCENTIL_SOCIALES_CIUDADANAS,,No,,,,
+DESEMP_SOCIALES_CIUDADANAS,,No,,,,
+PUNT_INGLES,Puntaje Ingles,Si,Puntaje ingles,"Numerica -Rango (0, 100)",,Numerica
+PERCENTIL_INGLES,,No,,,,
+DESEMP_INGLES,,No,,,,
+PUNT_GLOBAL,Puntaje Global,Si,Puntaje total obtenido ,"Numerica -Rango (0, 500)",,Numerica
+PERCENTIL_GLOBAL,,No,,,,
+ESTU_INSE_INDIVIDUAL,,No,indice Socioeconomico del evaluado,,,
+ESTU_NSE_INDIVIDUAL,,No,No se encuentran en todos los anos,,,
+ESTU_NSE_ESTABLECIMIENTO,,No,No se encuentran en todos los anos,,,
+ESTU_ESTADOINVESTIGACION,,No,,,,
+ESTU_GENERACION-E,,No,,,,
